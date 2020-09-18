@@ -1,0 +1,368 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <title>Single Page Resume</title>
+    <link rel="stylesheet" href="css-progbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <div class="sidebar">
+        <div class="sidebar__info">
+            <div class="sidebar__info--img mg-tp-md">
+                <img src="img/user.jpeg" alt="user" class="sidebar__img">
+            </div>
+            <h2 class="sidebar__info--name mg-tp-sm">John Smith</h2>
+            <h4 class="sidebar__info--profession">Web Developer</h4>
+        </div>
+
+        <div class="sidebar__contact">
+            <ul class="sidebar__contact--list">
+                <li class="sidebar__contact--item">
+                    <svg class="sidebar__contact--icon">
+                        <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                    </svg>
+                    <span>123,Berkeley,CA</span>
+                </li>
+                <li class="sidebar__contact--item">
+                    <svg class="sidebar__contact--icon">
+                        <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <span>johndoe@xyz.com</span>
+                </li>
+                <li class="sidebar__contact--item">
+                    <svg class="sidebar__contact--icon">
+                        <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                    <span>johndoe.linkedin.com</span>
+                </li>
+                <li class="sidebar__contact--item">
+                    <svg class="sidebar__contact--icon">
+                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <span>+1 987 6543 210</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar__skills">
+            <div class="sidebar__skills--header">
+                <svg class="sidebar__skills--icon">
+                    <use xlink:href="img/sprite.svg#icon-flash"></use>
+                </svg>
+                <h2 class="heading-secondary">skills</h2>
+            </div>
+
+            <ul class="sidebar__skills--list">
+                <li class="sidebar__skills-item">Web Designing</li>
+                <li class="sidebar__skills-item">Web Development</li>
+                <li class="sidebar__skills-item">Photoshop</li>
+                <li class="sidebar__skills-item">Content Management</li>
+                <li class="sidebar__skills-item">Business Management</li>
+            </ul>
+        </div>
+
+        <div class="sidebar__expertise">
+            <div class="sidebar__expertise--header">
+                <svg class="sidebar__expertise--icon">
+                    <use xlink:href="img/sprite.svg#icon-cog"></use>
+                </svg>
+                <h2 class="heading-secondary">expertise</h2>
+            </div>
+
+            <ul class="sidebar__expertise--list">
+                <li class="sidebar__expertise-item">
+                    <p class="sidebar__expertise-item--sub">HTML</p>
+                    <div class="sidebar__expertise-bar--1"></div>
+                </li>
+                <li class="sidebar__expertise-item">
+                    <p class="sidebar__expertise-item--sub">css</p>
+                    <div class="sidebar__expertise-bar--2"></div>
+                </li>
+                <li class="sidebar__expertise-item">
+                    <p class="sidebar__expertise-item--sub">javaScript</p>
+                    <div class="sidebar__expertise-bar--3"></div>
+                </li>
+                <li class="sidebar__expertise-item">
+                    <p class="sidebar__expertise-item--sub">react js</p>
+                    <div class="sidebar__expertise-bar--4"></div>
+                </li>
+                <li class="sidebar__expertise-item">
+                    <p class="sidebar__expertise-item--sub">node js</p>
+                    <div class="sidebar__expertise-bar--5"></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar__software">
+            <div class="sidebar__software--header">
+                <svg class="sidebar__software--icon">
+                    <use xlink:href="img/sprite.svg#icon-display"></use>
+                </svg>
+                <h2 class="heading-secondary">software</h2>
+            </div>
+            <div class="sidebar__software--list">
+
+                <div class="sidebar__software--item sidebar__software--item-1">
+                    <div class="progress-circle over50 p70">
+                        <span>70%</span>
+                        <div class="left-half-clipper">
+                            <div class="first50-bar"></div>
+                            <div class="value-bar"></div>
+                        </div>
+                    </div>
+                    <span class="sidebar__software--item-text text-center">Photoshop</span>
+                </div>
+
+                <div class="sidebar__software--item sidebar__software--item-1">
+                    <div class="progress-circle over50 p90">
+                        <span>90%</span>
+                        <div class="left-half-clipper">
+                            <div class="first50-bar"></div>
+                            <div class="value-bar"></div>
+                        </div>
+                    </div>
+                    <span class="sidebar__software--item-text text-center">Microsoft Excel</span>
+                </div>
+
+                <div class="sidebar__software--item sidebar__software--item-1">
+                    <div class="progress-circle over50 p78">
+                        <span>78%</span>
+                        <div class="left-half-clipper">
+                            <div class="first50-bar"></div>
+                            <div class="value-bar"></div>
+                        </div>
+                    </div>
+                    <span class="sidebar__software--item-text text-center">Git &amp; Github</span>
+                </div>
+
+                <div class="sidebar__software--item sidebar__software--item-1">
+                    <div class="progress-circle over50 p100">
+                        <span>100%</span>
+                        <div class="left-half-clipper">
+                            <div class="first50-bar"></div>
+                            <div class="value-bar"></div>
+                        </div>
+                    </div>
+                    <span class="sidebar__software--item-text text-center">WebStorm</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sidebar__social">
+            <ul class="sidebar__social--list">
+
+                <li class="sidebar__social--item">
+                    <a href="#" class="sidebar__social--link">
+                        <svg class="sidebar__social--icon">
+                            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="sidebar__social--item">
+                    <a href="#" class="sidebar__social--link">
+                        <svg class="sidebar__social--icon">
+                            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="sidebar__social--item">
+                    <a href="#" class="sidebar__social--link">
+                        <svg class="sidebar__social--icon">
+                            <use xlink:href="img/sprite.svg#icon-behance"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="sidebar__social--item">
+                    <a href="#" class="sidebar__social--link">
+                        <svg class="sidebar__social--icon">
+                            <use xlink:href="img/sprite.svg#icon-skype"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="sidebar__social--item">
+                    <a href="#" class="sidebar__social--link">
+                        <svg class="sidebar__social--icon">
+                            <use xlink:href="img/sprite.svg#icon-renren"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="main__about">
+            <div class="main__about-header">
+                <svg class="main__about--icon">
+                    <use xlink:href="img/sprite.svg#icon-error_outline"></use>
+                </svg>
+                <h2 class="heading-secondary main__about--heading">Why me!</h2>
+            </div>
+            <p class="main__about--paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corporis
+                doloremque dolores, ea, eligendi enim exercitationem expedita, hic libero nam natus nobis perspiciatis
+                praesentium qui quod saepe suscipit tempora tempore! orem ipsum dolor sit amet, consectetur adipisicing
+                elit. Animi asperiores autem consequuntur deserunt error esse expedita facilis in laboriosam, laborum
+                molestias neque nulla perspiciatis porro saepe sed temporibus velit voluptatem? orem ipsum dolor sit
+                amet, consectetur adipisicing elit. Ab adipisci aliquid amet, architecto consectetur, dolores ducimus
+                eaque earum et id magnam magni, nam nesciunt officiis perspiciatis recusandae repellat sequi sint?</p>
+        </div>
+
+        <div class="main__experience">
+            <h3 class="heading__tertiary">experience</h3>
+            <div class="timeline">
+                <div class="timeline__body">
+                    <div class="timeline__item">
+                        <p class="timeline__time">2006-12 - <br> Currently </p>
+                        <h2 class="timeline__title">senior project manager</h2>
+                        <p class="timeline__title__sub">Senior Manager VC</p>
+                        <ul class="timeline__list">
+                            <li class="timeline__list--items">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </li>
+                            <li class="timeline__list--items">Aliquam aperiam blanditiis commodi consequatur delectus
+                                fuga ipsa ipsam labore laborum minima
+                            </li>
+                            <li class="timeline__list--items">Nihil nostrum porro provident quas sapiente sit tempore
+                                unde voluptatum
+                            </li>
+                            <li class="timeline__list--items">aperiam blanditiis commodi consequatur delectus
+                                consectetur fuga ipsa ipsam labore
+                            </li>
+                            <li class="timeline__list--items"> Aliquam aperiam blanditiis commodi consequatur delectus
+                                fuga ipsa ipsam labore laborum minima labore
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline__item">
+                        <p class="timeline__time">2004-09 - <br> 2006-12 </p>
+                        <h2 class="timeline__title">junior project manager</h2>
+                        <p class="timeline__title__sub">junior Manager VC</p>
+                        <ul class="timeline__list">
+                            <li class="timeline__list--items">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </li>
+                            <li class="timeline__list--items">Aliquam aperiam blanditiis commodi consequatur delectus
+                                fuga ipsa ipsam labore laborum minima
+                            </li>
+                            <li class="timeline__list--items">Nihil nostrum porro provident quas sapiente sit tempore
+                                unde voluptatum
+                            </li>
+                            <li class="timeline__list--items">aperiam blanditiis commodi consequatur delectus
+                                consectetur fuga ipsa ipsam labore
+                            </li>
+                            <li class="timeline__list--items"> Aliquam aperiam blanditiis commodi consequatur delectus
+                                fuga ipsa ipsam labore laborum minima labore
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline__item">
+                        <p class="timeline__time">2007-08 - <br> 2004-09 </p>
+                        <h2 class="timeline__title">iT support officer</h2>
+                        <p class="timeline__title__sub">support officer</p>
+                        <ul class="timeline__list">
+                            <li class="timeline__list--items">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </li>
+                            <li class="timeline__list--items">Aliquam aperiam blanditiis commodi consequatur delectus
+                                fuga ipsa ipsam labore laborum minima
+                            </li>
+                            <li class="timeline__list--items">Nihil nostrum porro provident quas sapiente sit tempore
+                                unde voluptatum
+                            </li>
+                            <li class="timeline__list--items">aperiam blanditiis commodi consequatur delectus
+                                consectetur fuga ipsa ipsam labore
+                            </li>
+                            <li class="timeline__list--items"> Aliquam aperiam blanditiis commodi consequatur delectus
+                                fuga ipsa ipsam labore laborum minima labore
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main__education">
+            <h3 class="heading__tertiary mg-tp-md">education</h3>
+            <div class="timeline">
+                <div class="timeline__body">
+                    <div class="timeline__item">
+                        <p class="timeline__time">2006-12 - <br> Currently </p>
+                        <h2 class="timeline__title">master of computer science, college of maryland</h2>
+                        <ul class="timeline__list mg-tp-sm">
+                            <li class="timeline__list--items">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </li>
+                            <li class="timeline__list--items">Aliquam aperiam blanditiis commodi consequatur delectus
+                                fuga ipsa ipsam labore laborum minima
+                            </li>
+                            <li class="timeline__list--items">Nihil nostrum porro provident quas sapiente sit tempore
+                                unde voluptatum
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline__item">
+                        <p class="timeline__time">2004-09 - <br> 2006-12 </p>
+                        <h2 class="timeline__title">bachelor of computer science, college of maryland</h2>
+                        <ul class="timeline__list mg-tp-sm">
+                            <li class="timeline__list--items">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </li>
+                            <li class="timeline__list--items">Aliquam aperiam blanditiis commodi consequatur delectus
+                                fuga ipsa ipsam labore laborum minima
+                            </li>
+                            <li class="timeline__list--items">Nihil nostrum porro provident quas sapiente sit tempore
+                                unde voluptatum
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main__education">
+            <h3 class="heading__tertiary mg-tp-md">certificate</h3>
+            <div class="timeline">
+                <div class="timeline__body">
+                    <div class="timeline__item">
+                        <p class="timeline__time">2006-12 - <br> 2010-14 </p>
+                        <p class="timeline__title__sub mg-tp-tiny text-bold">PMP Project Manager</p>
+                        <p class="timeline__list">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis delectus dolores hic
+                            minus natus nesciunt obcaecati quia ratione repudiandae sint, totam velit. Autem cum eaque
+                            qui repellendus sequi soluta sunt.
+                        </p>
+                    </div>
+
+                    <div class="timeline__item">
+                        <p class="timeline__time">2004-09 - <br> 2006-12 </p>
+                        <p class="timeline__title__sub mg-tp-tiny text-bold">Award in Team Work</p>
+                        <p class="timeline__list">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis delectus dolores hic
+                            minus natus nesciunt obcaecati quia ratione repudiandae sint, totam velit. Autem cum eaque
+                            qui repellendus sequi soluta sunt.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

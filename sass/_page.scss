@@ -1,0 +1,267 @@
+.sidebar {
+  color: $color-white;
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border:4px groove $color-white;
+  }
+
+  &__info {
+    justify-self: center;
+
+
+    &--img {
+      height: 20rem;
+      width: 20rem;
+    }
+
+    &--name {
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    &--profession {
+      text-transform: capitalize;
+      text-align: center;
+      letter-spacing: 3px;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+
+  &__contact {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px groove $color-white;
+
+    &--item {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-column-gap: 2rem;
+      align-items: center;
+      padding: 1rem 0;
+
+      span {
+        justify-self: start;
+        letter-spacing: 2px;
+      }
+    }
+
+    &--icon {
+      height: 2rem;
+      width: 2rem;
+      fill: $color-white;
+    }
+  }
+
+  &__skills {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    align-items: center;
+    border-top: 1px groove $color-white;
+
+    &--header {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-column-gap: 2rem;
+    }
+
+    &--icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: currentColor;
+    }
+
+    &--list {
+      padding: 1.5rem 0 0 1rem;
+    }
+
+    &-item {
+      list-style: none;
+      padding: .8rem 0;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__expertise {
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem 0;
+    align-items: center;
+    border-top: 1px groove $color-white;
+
+    &--header {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-column-gap: 2rem;
+    }
+
+    &--icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: currentColor;
+    }
+
+    &--list {
+      padding: 3rem 0 0 1rem;
+    }
+
+    &-item {
+      list-style: none;
+      padding: .8rem 0;
+      letter-spacing: 2px;
+
+      &--sub {
+        padding-bottom: 7px;
+        text-transform: uppercase;
+      }
+    }
+
+    &-bar--1,
+    &-bar--2,
+    &-bar--3,
+    &-bar--4,
+    &-bar--5 {
+      width: 100%;
+      height: 6px;
+      background-color: $color-black1;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-light;
+      }
+    }
+
+    &-bar--2 {
+      &::after {
+        width: 75%;
+      }
+    }
+
+    &-bar--3 {
+      &::after {
+        width: 85%;
+      }
+    }
+
+    &-bar--4 {
+      &::after {
+        width: 45%;
+      }
+    }
+
+    &-bar--5 {
+      &::after {
+        width: 60%;
+      }
+    }
+  }
+
+  &__social {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom:2rem;
+    border-top: 1px groove $color-white;
+
+    &--list {
+      padding-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: center;
+    }
+
+    &--icon {
+      width: 1.3rem;
+      height: 1.3rem;
+      fill: $color-white;
+    }
+
+    &--item {
+      list-style: none;
+    }
+
+    &--link {
+      text-decoration: none;
+      background-color: $color-black1;
+      width: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3rem;
+    }
+  }
+
+  &__software {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    align-items: center;
+    border-top: 1px groove $color-white;
+
+    &--header {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-column-gap: 2rem;
+    }
+
+    &--icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: currentColor;
+    }
+
+    &--list{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      width:100%;
+      justify-content: center;
+    }
+
+    &--item{
+      display:grid;
+      grid-template-rows: min-content min-content;
+      padding-top:3rem;
+
+      &-text{
+        color: #53777A;
+      }
+    }
+  }
+}
+////////////////////////// MAIN //////////////////////////
+
+.main__about{
+  padding-bottom:2rem;
+
+  &--heading{
+    color:$color-black1;
+    font-weight: 700;
+  }
+
+  &-header{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column-gap: 2rem;
+    align-items: center;
+    padding-bottom:1rem;
+  }
+
+  &--icon{
+    width:2.5rem;
+    height:2.5rem;
+  }
+
+  &--paragraph{
+    padding-left:5rem;
+  }
+}
